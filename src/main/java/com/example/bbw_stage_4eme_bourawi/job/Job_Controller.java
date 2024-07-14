@@ -21,7 +21,7 @@ public class Job_Controller {
     }
 
     @PutMapping("/update")
-    public Job_entity updatej(Job_entity j){
+    public Job_entity updatejob(Job_entity j){
         return this.jobService.updateJob(j);
     }
 

@@ -8,9 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 @Getter
 @Setter
@@ -24,7 +21,7 @@ public class Application_entity implements Serializable {
     long idApp;
     String candidateName;
     String email;
-    private byte[] cv;
+    private String cvFilePath;
     @ManyToOne
     @JoinColumn(name = "job_id", referencedColumnName = "idJob", nullable = false)
     private Job_entity job;
